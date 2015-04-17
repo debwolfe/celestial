@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  nametype: MyString
+  recclass: MyString
+  mass: MyString
+  fall: MyString
+  year: MyString
+  reclat: MyString
+  reclong: MyString
+
+two:
+  name: MyString
+  nametype: MyString
+  recclass: MyString
+  mass: MyString
+  fall: MyString
+  year: MyString
+  reclat: MyString
+  reclong: MyString
