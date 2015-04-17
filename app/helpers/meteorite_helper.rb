@@ -1,0 +1,2 @@
+module MeteoriteHelper
+end
