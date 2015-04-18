@@ -18,11 +18,10 @@ ActiveRecord::Schema.define(version: 20150417192041) do
 
   create_table "meteorites", force: :cascade do |t|
     t.string   "name"
-    t.string   "nametype"
     t.string   "recclass"
-    t.string   "mass"
+    t.decimal  "mass"
     t.string   "fall"
-    t.string   "year"
+    t.integer  "year"
     t.string   "reclat"
     t.string   "reclong"
     t.datetime "created_at", null: false
