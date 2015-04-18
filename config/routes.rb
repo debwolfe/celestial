@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   # get 'meteorites/index'
 
-  resources :meteorites, only: [:index, :show]
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -9,6 +9,17 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'meteorites#index'
 
+  get 'meteorites/biggest', to: 'meteorites#biggest'
+
+  get 'meteorites/by_year', to: 'meteorites#by_year'
+
+  get 'meteorites/by_name', to: 'meteorites#by_name'
+
+  get 'meteorites/group_by_material', to: 'meteorites#group_by_material'
+
+  get 'meteorites/group_by_year', to: 'meteorites#group_by_year'
+
+  resources :meteorites, only: [:index, :show]
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
