@@ -9,7 +9,15 @@ class MeteoritesController < ApplicationController
   end
 
   def by_year
-    meteorites = Meteorite.where("year > '1900'").order('year LIMIT 1000').pluck(:mass, :reclat, :reclong, :year)
+    # consider limiting by year
+    year = 1800
+    meteorites = {}
+    until year == 2014
+      meteorites[year] = []
+      meteorites[year] << Meteorite.where("year = #{year}").order('year').pluck(:mass, :reclat, :reclong)
+      meteorites[year].flatten!(1)
+     year += 1
+    end
     render json: meteorites
   end
 
@@ -18,8 +26,14 @@ class MeteoritesController < ApplicationController
     render json: meteorites
   end
 
-  def by_material
+  def group_by_material
     meteorites = Meteorite.group(:recclass).count
+    render json: meteorites
+  end
+
+  def group_by_year
+    meteorites = Meteorite.group(:year).count
+    meteorites.sort
     render json: meteorites
   end
 

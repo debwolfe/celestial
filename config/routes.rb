@@ -15,7 +15,9 @@ Rails.application.routes.draw do
 
   get 'meteorites/by_name', to: 'meteorites#by_name'
 
-  get 'meteorites/by_material', to: 'meteorites#by_material'
+  get 'meteorites/group_by_material', to: 'meteorites#group_by_material'
+
+  get 'meteorites/group_by_year', to: 'meteorites#group_by_year'
 
   resources :meteorites, only: [:index, :show]
   # Example of regular route:
