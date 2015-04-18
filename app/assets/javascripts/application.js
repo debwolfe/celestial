@@ -12,5 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require imagesloaded
+//= require skrollr
+//= require meteorite
 //= require turbolinks
 //= require_tree .
