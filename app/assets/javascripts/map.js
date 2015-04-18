@@ -1,6 +1,7 @@
 function initialize() {
     var meteorites = [];
     for (var i = 0; i < 100; i++) {
+        //this is a place for deb to put in real data :)
         var mass = Math.random() * 100000 + 50000;
         var lat = Math.random() * 90;
         var lon = Math.random() * 90;

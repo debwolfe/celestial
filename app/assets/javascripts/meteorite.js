@@ -17,7 +17,6 @@
             // Resize sections
             adjustWindow();
 
-            console.log("Hello");
             // Fade in sections
             $('body').removeClass('loading').addClass('loaded');
 

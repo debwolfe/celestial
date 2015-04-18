@@ -10,6 +10,7 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+// do we need to require c3, d3 in our turbo links?
 //= require jquery
 //= require jquery_ujs
 //= require imagesloaded
