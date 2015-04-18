@@ -10,9 +10,10 @@ function initialize() {
     }
 
     var mapOptions = {
-        zoom: 3,
-        center: new google.maps.LatLng(0, 0),
-        mapTypeId: google.maps.MapTypeId.TERRAIN
+        zoom: 2.2,
+        center: new google.maps.LatLng(25, -18),
+        mapTypeId: google.maps.MapTypeId.TERRAIN,
+        scrollwheel: false
     };
 
     var map = new google.maps.Map(document.getElementById('map-canvas'),
@@ -22,7 +23,7 @@ function initialize() {
 
 }
 
-function removeCircle(meteoCircleObj) {
+function fadeoutCircle(meteoCircleObj) {
     meteoCircleObj.setOptions(
         {
             strokeOpacity: meteoCircleObj.strokeOpacity - 0.01,
@@ -32,7 +33,7 @@ function removeCircle(meteoCircleObj) {
     );
     if (meteoCircleObj.fillOpacity > 0) {
         setInterval(function () {
-            removeCircle(meteoCircleObj);
+            fadeoutCircle(meteoCircleObj);
         }, 100);
 
     } else {
@@ -57,7 +58,7 @@ function drawCircles(meteorites, map, i) {
 
         var meteoObj = new google.maps.Circle(meteoriteCircle)
 
-        removeCircle(meteoObj);
+        fadeoutCircle(meteoObj);
 
 
         setTimeout(function () {
