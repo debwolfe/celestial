@@ -37,6 +37,16 @@ body {
   line-height: 1.4;
 }
 
+.title{
+  color: white;
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 10%;
+  font-family: 'Cabin Sketch', cursive;
+}
+
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
  * These selection rule sets have to be separate.

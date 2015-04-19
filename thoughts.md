@@ -1,0 +1,20 @@
+
+
+
+Items for Sunday April 19, 2015
+git workflow and pull-test then merge (ptm)
+360 feedback, are we proud of what we are building? are we happy with not pairing formally? lets ask again who is visiting our site?
+erin maps styling with oval, color scheme, placement
+deb rspec today, maybe some model methods for rare elements
+dixon slow the globe animation, creating grab hand on click of globe, creating some c3 graphs
+kailash will write and organize some content for special meteors <- slideshow in one div? parallax transitions
+
+
+
+
+map rendering into an oval shape
+map styling to have black and green:
+https://snazzymaps.com/style/12/midnight-commander <- black inside and green outline
+complete right side menu navigation
+complete parallax transitions from black to new backround
+- perhaps give a rotating away feel of graphs rendered
