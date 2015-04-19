@@ -131,7 +131,10 @@ body {
 }
 
 h2 {
-  margin-top: 0;
+  margin: 0 auto;
+  color: white;
+  padding: 10px;
+  text-align: center;
 }
 
 .loading {
@@ -190,7 +193,7 @@ main {
   color: #fff8de;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 10px 5px;
-  font-size: 35px;
+  font-size: 40px;
   line-height: 38px;
   margin-bottom: 12px;
 }
@@ -223,6 +226,19 @@ main {
   margin-left: -450px;
   bottom: 200px;
   top: auto;
+}
+
+.year_slider {
+  margin: 0 auto;
+  width: 80%;
+}
+
+#year_indicator {
+  color: yellow;
+  width: 40px;
+  position: relative;
+  padding: 10px;
+
 }
 
 /* Slide 3 */
