@@ -17,4 +17,5 @@
 //= require skrollr
 //= require meteorite
 //= require turbolinks
+//= require_tree ./C3_graphs
 //= require_tree .
