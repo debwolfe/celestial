@@ -6,7 +6,7 @@ git workflow and pull-test then merge (ptm)
 360 feedback, are we proud of what we are building? are we happy with not pairing formally? lets ask again who is visiting our site?
 erin maps styling with oval, color scheme, placement
 deb rspec today, maybe some model methods for rare elements
-dixon slow the globe animation, creating grab hand on click of globe, pointer on hover over marker, set the default view above america, creating some c3 graphs for ...
+dixon slow the globe animation, creating grab hand on click of globe, pointer on hover over marker, set the default view above america, create some styling on the globe? creating some c3 graphs for ...
 kailash will write and organize some content for special meteors <- slideshow in one div? parallax transitions, c3 graphs
 
 
