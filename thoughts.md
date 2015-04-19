@@ -13,8 +13,12 @@ kailash will write and organize some content for special meteors <- slideshow in
 
 
 map rendering into an oval shape
+
 map styling to have black and green:
+
 https://snazzymaps.com/style/12/midnight-commander <- black inside and green outline
-complete right side menu navigation
-complete parallax transitions from black to new backround
+
+complete right side menu navigation - http://jsfiddle.net/vu6hN/28/ , http://jsfiddle.net/58s7c1sf/
+
+complete parallax transitions from black to new backround - http://jsfiddle.net/anjum121/zkym4/
 - perhaps give a rotating away feel of graphs rendered
