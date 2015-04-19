@@ -1,4 +1,14 @@
 function initialize() {
+
+    $.ajax({
+        url: 'meteorites/by_year',
+        type: 'GET'
+    }).done(function(response){
+        console.log(response);
+
+
+
+    })
     var meteorites = [];
     for (var i = 0; i < 100; i++) {
         //this is a place for deb to put in real data :)
@@ -69,3 +79,7 @@ function drawCircles(meteorites, map, i) {
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
+
+$(function() {
+    $( "#slider" ).slider();
+});
