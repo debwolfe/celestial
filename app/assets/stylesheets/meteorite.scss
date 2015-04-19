@@ -218,6 +218,19 @@ main {
   top: auto;
 }
 
+.year_slider {
+  margin: 0 auto;
+  width: 80%;
+}
+
+#year_indicator {
+  color: yellow;
+  width: 40px;
+  position: relative;
+  padding: 10px;
+
+}
+
 /* Slide 3 */
 #slide-3 .bcg {
   background-image: url('bcg_slide-3.jpg')

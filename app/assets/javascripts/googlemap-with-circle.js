@@ -81,5 +81,17 @@ function drawCircles(meteorites, map, i) {
 google.maps.event.addDomListener(window, 'load', initialize);
 
 $(function() {
-    $( "#slider" ).slider();
+    $( "#slider" ).slider({
+        animate:"fast",
+        min: 1800,
+        max: 2013,
+        change: function(event, ui) {
+            year = ui.value;
+            year_text_location = event.clientX-30;
+            $('#year_indicator').text(year);
+            $('#year_indicator').css("left", year_text_location)
+        }
+    });
 });
+
+
