@@ -6,8 +6,8 @@ class CreateMeteorites < ActiveRecord::Migration
       t.decimal :mass
       t.string :fall
       t.integer :year
-      t.string :reclat
-      t.string :reclong
+      t.decimal :reclat
+      t.decimal :reclong
       t.timestamps null: false
     end
   end
