@@ -1,97 +1,92 @@
 function initialize() {
 
-    $.ajax({
-        url: 'meteorites/by_year',
-        type: 'GET'
-    }).done(function(response){
-        console.log(response);
+  $.ajax({
+    url: 'meteorites/by_year',
+    type: 'GET'
+  }).done(function (response) {
+    meteo_data = response;
+  })
 
+  var mapOptions = {
+    zoom: 2.2,
+    center: new google.maps.LatLng(25, -18),
+    mapTypeId: google.maps.MapTypeId.TERRAIN,
+    scrollwheel: false
+  };
 
-
-    })
-    var meteorites = [];
-    for (var i = 0; i < 100; i++) {
-        //this is a place for deb to put in real data :)
-        var mass = Math.random() * 100000 + 50000;
-        var lat = Math.random() * 90;
-        var lon = Math.random() * 90;
-        var year = i + 1990;
-        meteorites.push([mass, lat, lon, year]);
-    }
-
-    var mapOptions = {
-        zoom: 2.2,
-        center: new google.maps.LatLng(25, -18),
-        mapTypeId: google.maps.MapTypeId.TERRAIN,
-        scrollwheel: false
-    };
-
-    var map = new google.maps.Map(document.getElementById('map-canvas'),
-        mapOptions);
-
-    drawCircles(meteorites, map, 0);
+  map = new google.maps.Map(document.getElementById('map-canvas'),
+      mapOptions);
 
 }
 
-function fadeoutCircle(meteoCircleObj) {
-    meteoCircleObj.setOptions(
-        {
-            strokeOpacity: meteoCircleObj.strokeOpacity - 0.01,
-            fillOpacity: meteoCircleObj.fillOpacity - 0.01,
-            radius: meteoCircleObj.radius * 1.01
+function fadeoutCircle() {
+  circles.forEach(
+      function (circle, index, array) {
+        console.log(circle);
+        if (circle.fillOpacity > 0.0) {
+          circle.setOptions(
+              {
+                strokeOpacity: circle.strokeOpacity - 0.1,
+                fillOpacity: circle.fillOpacity - 0.1,
+                radius: circle.radius * 1.1
+              });
         }
-    );
-    if (meteoCircleObj.fillOpacity > 0) {
-        setInterval(function () {
-            fadeoutCircle(meteoCircleObj);
-        }, 100);
 
-    } else {
-        meteoCircleObj.setVisible(false);
-    }
+      });
+
 }
 
-function drawCircles(meteorites, map, i) {
-    if (i < meteorites.length) {
-        var meteorite = meteorites[i];
+var circles = [];
+//setInterval(function () {
+//    fadeoutCircle();
+//}, 200);
+
+function clearCircles() {
+  for (var i = 0; i < circles.length; i++) {
+    circles[i].setMap(null);
+  }
+  circles.length = 0;
+}
+
+function drawCircles(year) {
+  clearCircles();
+  meteo_data[year].forEach(
+      function (element, index, array) {
+        console.log(element);
         var meteoriteCircle = {
-            strokeColor: '#FF0000',
-            strokeOpacity: 0.8,
-            strokeWeight: 2,
-            fillColor: '#FF0000',
-            fillOpacity: 1.0,
-            map: map,
-            center: new google.maps.LatLng(meteorite[1], meteorite[2]),
-            radius: Math.sqrt(meteorite[0]) * 500
-            // (meteorite[0]/10)
+          strokeColor: '#FF0000',
+          strokeOpacity: 0.8,
+          strokeWeight: 2,
+          fillColor: '#FF0000',
+          fillOpacity: 1.0,
+          map: map,
+          center: new google.maps.LatLng(element[1], element[2]),
+          radius: Math.sqrt(element[0]) * 500
         };
 
         var meteoObj = new google.maps.Circle(meteoriteCircle)
 
-        fadeoutCircle(meteoObj);
-
-
-        setTimeout(function () {
-            drawCircles(meteorites, map, i + 1)
-        }, 200);
-    }
-
+        circles.push(meteoObj);
+      }
+  );
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
 
-$(function() {
-    $( "#slider" ).slider({
-        animate:"fast",
-        min: 1800,
-        max: 2013,
-        change: function(event, ui) {
-            year = ui.value;
-            year_text_location = event.clientX-30;
-            $('#year_indicator').text(year);
-            $('#year_indicator').css("left", year_text_location)
-        }
-    });
+$(function () {
+  $("#slider").slider({
+    animate: "fast",
+    min: 1800,
+    max: 2013,
+    change: function (event, ui) {
+      year = ui.value;
+      year_text_location = event.clientX - 30;
+      var $yearIndicator = $('#year_indicator');
+      $yearIndicator.text(year);
+      $yearIndicator.css("left", year_text_location)
+      drawCircles(year);
+    }
+  });
 });
 
 
