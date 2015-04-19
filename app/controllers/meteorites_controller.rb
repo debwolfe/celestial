@@ -10,13 +10,12 @@ class MeteoritesController < ApplicationController
 
   def by_year
     # consider limiting by year
-    year = 1800
     meteorites = {}
-    until year == 2014
-      meteorites[year] = []
-      meteorites[year] << Meteorite.where("year = #{year}").order('year').pluck(:mass, :reclat, :reclong)
-      meteorites[year].flatten!(1)
-     year += 1
+    data = Meteorite.where("year >= 1800").order('year')
+    data.each do |meteorite|
+      meteorites[meteorite[:year]] = [] unless meteorites.has_key?(meteorite[:year])
+
+      meteorites[meteorite[:year]] << [meteorite[:mass], meteorite[:reclat], meteorite[:reclong]]
     end
     render json: meteorites
   end
