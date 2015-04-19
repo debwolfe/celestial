@@ -22,8 +22,8 @@ ActiveRecord::Schema.define(version: 20150417192041) do
     t.decimal  "mass"
     t.string   "fall"
     t.integer  "year"
-    t.string   "reclat"
-    t.string   "reclong"
+    t.decimal  "reclat"
+    t.decimal  "reclong"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

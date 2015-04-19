@@ -37,6 +37,16 @@ body {
   line-height: 1.4;
 }
 
+.title{
+  color: white;
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 10%;
+  font-family: 'Cabin Sketch', cursive;
+}
+
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
  * These selection rule sets have to be separate.
@@ -231,7 +241,7 @@ main {
 
 /* Slide 4 */
 #slide-4 .bcg {
-  background-image: url('main.jpg')
+  background-image: url('bcg_slide-4.jpg')
 }
 
 #slide-4 .hsContent {
@@ -242,6 +252,42 @@ main {
   background: none;
   padding-left: 0;
   padding-right: 0;
+}
+
+/* Slide 5 */
+#slide-5 .bcg {
+  background-image: url('x.jpg')
+}
+
+#slide-5 .hsContent {
+  top: auto;
+}
+
+/* Slide 6 */
+#slide-6 .bcg {
+  background-image: url('x.jpg')
+}
+
+#slide-6 .hsContent {
+  top: auto;
+}
+
+/* Slide 7 */
+#slide-7 .bcg {
+  background-image: url('x.jpg')
+}
+
+#slide-7 .hsContent {
+  top: auto;
+}
+
+/* Slide 8 */
+#slide-8 .bcg {
+  background-image: url('bcg_slide-8.jpg')
+}
+
+#slide-8 .hsContent {
+  top: auto;
 }
 
 /* ==========================================================================

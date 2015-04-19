@@ -37,16 +37,9 @@ class MeteoritesController < ApplicationController
     render json: meteorites
   end
 
-
-  def group_by_hemisphere
-
-    meteorites_north_west = Meteorite.where(:year).count
-
-    render json: meteorites
-  end
-
   def show
-    @meteorite = Meteorite.find(params[:id ])
+    meteorite = Meteorite.find(params[:id ])
+    render json: meteorite
   end
 
 end
