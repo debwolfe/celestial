@@ -2,13 +2,17 @@ $(document).ready(function(){
     var chart = c3.generate({
         data: {
             columns: [
-                ['Lulu', 50],
-                ['Olaf', 50],
+                ['northeast', 47],
+                ['southeast', 23],
+                ['northwest', 24],
+                ['southwest', 6],
+
             ],
             type : 'donut'
         },
         donut: {
-            title: "Dogs love:",
+            title: "Meteorites by Hemisphere:",
         }
     });
 });
+6266
