@@ -1,4 +1,4 @@
-function initialize() {
+function initializeGoogleMaps() {
 
   $.ajax({
     url: 'meteorites/by_year',
@@ -71,7 +71,7 @@ function drawCircles(year) {
   );
 }
 
-google.maps.event.addDomListener(window, 'load', initialize);
+google.maps.event.addDomListener(window, 'load', initializeGoogleMaps);
 
 $(function () {
   $("#slider").slider({
