@@ -32,8 +32,16 @@ class MeteoritesController < ApplicationController
   end
 
   def group_by_year
+    meteorites_by_year = {}
     meteorites = Meteorite.group(:year).count
-    meteorites.sort
+    render json: meteorites
+  end
+
+
+  def group_by_hemisphere
+
+    meteorites_north_west = Meteorite.where(:year).count
+
     render json: meteorites
   end
 
