@@ -37,6 +37,10 @@ body {
   line-height: 1.4;
 }
 
+/*
+ * style for our celestial title on the opening slide
+ */
+
 .title{
   color: white;
   text-align: right;
@@ -45,6 +49,36 @@ body {
   right: 0;
   margin-right: 10%;
   font-family: 'Cabin Sketch', cursive;
+}
+
+/*
+ * style for a floating nav bar on right hand side
+ *
+ */
+
+.navigation {
+    width: 12%;
+    position: relative;
+    float: right;
+}
+
+.navigation nav {
+    position: fixed;
+    width: 25%;
+}
+
+.navigation a {
+    border-bottom: 1px solid #666;
+    color: #333;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navigation a:hover, #nav a.active {
+    background: #666;
+    color: #fff;
 }
 
 /*
