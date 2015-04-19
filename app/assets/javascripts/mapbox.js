@@ -13,3 +13,4 @@ $(function() {
 	// // set map view
 	// current_location_map.setView([37.734585, -122.447214], 12);
 });
+
