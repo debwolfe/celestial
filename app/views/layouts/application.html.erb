@@ -17,51 +17,7 @@
   <%= csrf_meta_tags %>
   <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.6/mapbox.js'></script>
 
-  <!-- initialize webgl globe and mapbox map -->
-  <script>
-    function initialize() {
-    	// ----- WEBGL -----
-      var options = { zoom: 3.0, position: [-19.583330, 17.916670] };
-      var earth = new WE.map('earth_div', options);
-      WE.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
-          attribution: '© OpenStreetMap contributors'
-      }).addTo(earth);
-      var marker2 = WE.marker([-19.583330, 17.916670]).addTo(earth);
-      marker2.bindPopup("<b>Hoba</b><br>Largest Meteorite!", {maxWidth: 120, closeButton: true});
-      // Start a simple rotation animation
-      var before = null;
-      requestAnimationFrame(function animate(now) {
-          var c = earth.getPosition();
-          var elapsed = before? now - before: 0;
-          before = now;
-          earth.setCenter([c[0], c[1] + 0.1*(elapsed/30)]);
-          requestAnimationFrame(animate);
-      });
 
-      // ----- MAPBOX -----
-      	// set up map
-   //    L.mapbox.accessToken = 'pk.eyJ1IjoiZGl4b25hZGFpciIsImEiOiJhR1dMRERVIn0.fpbNVrP6tCB3jOKzm41vlA'
-   //    var current_location_map = L.mapbox.map('current_location_map', 'dixonadair.lkbob6kb');
-   //    var myLayer = L.mapbox.featureLayer().addTo(current_location_map);
-   //    current_location_map.setView([37.734585, -122.447214], 12);
-
-   //    	// add marker
-			// var marker = L.mapbox.featureLayer({
-			//     type: 'Feature',
-			//     geometry: {
-			//         type: 'Point',
-			//         coordinates: [17.916670, -19.583330]
-			//     },
-			//     properties: {
-			//         title: 'Meteorite',
-			//         'marker-size': 'large',
-			//         'marker-color': '#BE9A6B'
-			//         // 'marker-symbol': 'cafe'
-			//     }
-			// });
-   //    marker.addTo(current_location_map);
-    }
-  </script>
 
 <!-- Note: these are cdn's to charting libraries. See assets/javascripts and assets/stylesheets for files we are now using-->
 <!--   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.js"></script> -->
@@ -69,8 +25,7 @@
 <!--   <link href="//cdnjs.cloudflare.com/ajax/libs/c3/0.1.29/c3.css" rel="stylesheet" type="text/css"> -->
 
 </head>
-<!-- the onload="initialize()" thing is for the webgl globe to work -->
-<body class="loading" onload="initialize()">
+<body class="loading">
 	<%= yield %>
 </body>
 </html>
