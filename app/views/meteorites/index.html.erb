@@ -18,14 +18,15 @@
 
   <div id='cssmenu'>
     <ul>
-      <li class='active'><a href='#slide-2'>Time Slide</a></li>
-      <li><a href='#slide-3'>Globe</a></li>
-      <li><a href='#slide-4'>Graphics</a></li>
-      <li class='last'><a href='#slide-5'>Graphics</a></li>
-      <li class='last'><a href='#slide-6'>Meteor Profiles</a></li>
-      <li class='last'><a href='#slide-7'>Prehistoric Impacts</a></li>
+      <li class='active'><a href="#slide-2">Introduction</a></li>
+      <li><a href='#slide-3'>Time Slide</a></li>
+      <li><a href='#slide-4'>Globe</a></li>
+      <li><a href='#slide-5'>Graphics</a></li>
+      <li><a href='#slide-6'>Graphics</a></li>
+      <li><a href='#slide-7'>Prehistoric Impacts</a></li>
     </ul>
   </div>
+
 
   <section id="slide-2" class="homeSlide">
     <div class="bcg">
@@ -136,7 +137,9 @@
     <div class="bcg">
       <div class="hsContainer">
         <h2>Meteorites by Hemisphere</h2>
-        <div id="chart"></div>
+          <div id="chart"></div>
+        <h2>Meteorites by Year</h2>
+          <div id="chart2"></div>
       </div>
     </div>
   </section>
@@ -150,7 +153,6 @@
         <div id="min_year">1800</div>
         <%=image_tag "play.png", {id: "play_button"}%>
         <div id="max_year">2013</div>
-
         <input id="year_indicator" value="1800">
       </div>
     </div>
