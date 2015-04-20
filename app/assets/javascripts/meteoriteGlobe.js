@@ -1,6 +1,6 @@
 function initializeWebGL() {
   // Set up Map
-  var options = {zoom: 2.5, position: [28, -80], scrollWheelZoom: false, atmosphere: true};
+  var options = {zoom: 2.5, position: [28, -80], scrollWheelZoom: true, atmosphere: true};
   var earth = new WE.map('earth_div', options);
   WE.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '© OpenStreetMap contributors'
@@ -17,7 +17,7 @@ function initializeWebGL() {
     var marker;
     for (i=0; i<num_meteorites; i++) {
       marker = WE.marker([meteorites[i].reclat, meteorites[i].reclong]).addTo(earth);
-      marker.bindPopup("<b>"+ meteorites[i].name +"</b><br>Mass: "+ meteorites[i].mass +" grams", {maxWidth: 120, closeButton: true});
+      marker.bindPopup("<b>"+ meteorites[i].name +"</b><br>Mass: "+ meteorites[i].mass +" (g)<br>Year: "+ meteorites[i].year +"<br>Material: "+ meteorites[i].recclass +" ", {maxWidth: 120, closeButton: true});
     }
   };
   // AJAX call to get meteorites from index route and pass them to
@@ -30,11 +30,10 @@ function initializeWebGL() {
     .done(function(response) {
       console.log("Success! The Ajax call worked.");
       console.log(response[0]);
-      // console.log(response.meteorites[5]);
       makeMeteoriteMarkers(response, response.length);
     })
     .fail(function() {
-      console.log("error, because it did not work!");
+      console.log("Error, Ajax call did not work!");
     })
   };
   // Run getMeteorites function
@@ -42,6 +41,7 @@ function initializeWebGL() {
 
   // -----------------------------------------------------
 
+  // Rotate Globe
   var speedDivisor = 150;
   var before = null;
   requestAnimationFrame(function animate(now) {
@@ -74,6 +74,11 @@ function initializeWebGL() {
       speedDivisor = 150;
       $('.stop_moving button').text("Stop Moving");
     }
+  });
+
+  // Close popup
+  $('#earth_div').on('click', '.we-pp-close', function(e) {
+    e.preventDefault();
   });
 
 };
