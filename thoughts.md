@@ -22,3 +22,5 @@ complete right side menu navigation - http://jsfiddle.net/vu6hN/28/ , http://jsf
 
 complete parallax transitions from black to new backround - http://jsfiddle.net/anjum121/zkym4/
 - perhaps give a rotating away feel of graphs rendered
+
+"+ meteorites[i].year.match(/\d{4}/g) +"
