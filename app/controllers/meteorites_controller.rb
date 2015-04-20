@@ -8,6 +8,11 @@ class MeteoritesController < ApplicationController
     render json: meteorite
   end
 
+  def top_100
+    meteorites = Meteorite.order('mass DESC LIMIT 100')
+    render json: meteorites
+  end
+
   def by_year
     # consider limiting by year
     meteorites = {}
@@ -33,6 +38,21 @@ class MeteoritesController < ApplicationController
   def group_by_year
     meteorites_by_year = {}
     meteorites = Meteorite.group(:year).count
+    render json: meteorites
+  end
+
+  def hemispheres
+    count = Meteorite.count
+    count = count.to_f
+    northeast = Meteorite.hemisphere("northeast")
+    northeast = northeast / count
+    northwest = Meteorite.hemisphere("northwest")
+    northwest = northwest / count
+    southeast = Meteorite.hemisphere("southeast")
+    southeast = southeast / count
+    southwest = Meteorite.hemisphere("southwest")
+    southwest = southwest / count
+    meteorites = { "northeast" => northeast, "northwest" => northwest, "southeast" => southeast, "southwest" => southwest }
     render json: meteorites
   end
 
