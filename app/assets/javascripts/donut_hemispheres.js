@@ -12,14 +12,15 @@ $(document).ready(function(){
         data: {
               columns: [
                 ['northeast', 47],
-                ['southeast', 24],
-                ['northwest', 23],
+                 ['southeast', 23],
                 ['southwest', 6],
+                 ['northwest', 24],
             ],
-            type : 'donut'
+            type : 'donut',
+            order: null
         },
-        donut: {
-            title: "Meteorites by Hemisphere:",
+        legend: {
+            hide: true
         }
     });
 });
