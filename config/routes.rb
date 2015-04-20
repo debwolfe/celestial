@@ -19,6 +19,8 @@ Rails.application.routes.draw do
 
   get 'meteorites/group_by_year', to: 'meteorites#group_by_year'
 
+  get 'meteorites/hemispheres', to: 'meteorites#hemispheres'
+
   resources :meteorites, only: [:index, :show]
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
