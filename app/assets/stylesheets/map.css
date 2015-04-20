@@ -5,6 +5,8 @@
     margin: 0 auto;
     padding: 0;
     border: 2px #FFFFFF;
+    border-radius: 500px;
+
 }
 
 /* Mapbox Map */
@@ -13,7 +15,7 @@
     height: 700px;
     margin: 0 auto;
     padding: 0;
-    border: 2px #FFFFFF;
+    border: 2px #000000;
 }
 
 /* Above formatting in line form */

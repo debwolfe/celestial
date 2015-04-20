@@ -7,15 +7,26 @@ function initializeGoogleMaps() {
     meteo_data = response;
   })
 
+
+  var styles =  [{"featureType":"water","elementType":"geometry","stylers":[{"color":"#333739"}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#000000"}]},{"featureType":"poi","stylers":[{"color":"#2ecc71"},{"lightness":-7}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"color":"#2ecc71"},{"lightness":-28}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#2ecc71"},{"visibility":"on"},{"lightness":-15}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#2ecc71"},{"lightness":-18}]},{"elementType":"labels.text.fill","stylers":[{"color":"#ffffff"}]},{"elementType":"labels.text.stroke","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#2ecc71"},{"lightness":-34}]},{"featureType":"administrative","elementType":"geometry","stylers":[{"visibility":"on"},{"color":"#333739"},{"weight":0.8}]},{"featureType":"poi.park","stylers":[{"color":"#2ecc71"}]},{"featureType":"road","elementType":"geometry.stroke","stylers":[{"color":"#333739"},{"weight":0.3},{"lightness":10}]}]
+
   var mapOptions = {
+    mapTypeControlOptions: {
+      mapTypeIds: ['Styled']
+    },
+
     zoom: 2.2,
     center: new google.maps.LatLng(25, -18),
-    mapTypeId: google.maps.MapTypeId.TERRAIN,
-    scrollwheel: false
+    mapTypeId: 'Styled',
+    scrollwheel: false,
+    disableDefaultUI: true,
   };
 
   map = new google.maps.Map(document.getElementById('map-canvas'),
       mapOptions);
+
+  var styledMapType = new google.maps.StyledMapType(styles, { name: 'Styled' });
+  map.mapTypes.set('Styled', styledMapType);
 
 }
 
@@ -58,7 +69,7 @@ function drawCircles(year) {
           strokeOpacity: 0.8,
           strokeWeight: 2,
           fillColor: '#FF0000',
-          fillOpacity: 1.0,
+          fillOpacity: 0.25,
           map: map,
           center: new google.maps.LatLng(element[1], element[2]),
           radius: Math.sqrt(element[0]) * 500
