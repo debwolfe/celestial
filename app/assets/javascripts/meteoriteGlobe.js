@@ -1,6 +1,6 @@
 function initializeWebGL() {
   // Set up Map
-  var options = {zoom: 2.0, position: [28, -80], scrollWheelZoom: false, atmosphere: true};
+  var options = {zoom: 2.5, position: [28, -80], scrollWheelZoom: false, atmosphere: true};
   var earth = new WE.map('earth_div', options);
   WE.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '© OpenStreetMap contributors'
@@ -9,6 +9,38 @@ function initializeWebGL() {
   // Marker
   var marker2 = WE.marker([-19.583330, 17.916670]).addTo(earth);
   marker2.bindPopup("<b>Hoba</b><br>Largest Meteorite!", {maxWidth: 120, closeButton: true});
+
+  // -----------------------------------------------------
+
+  // Put meteorites on map
+  function makeMeteoriteMarkers(meteorites, num_meteorites) {
+    var marker;
+    for (i=0; i<num_meteorites; i++) {
+      marker = WE.marker([meteorites[i].reclat, meteorites[i].reclong]).addTo(earth);
+      marker.bindPopup("<b>"+ meteorites[i].name +"</b><br>Mass: "+ meteorites[i].mass +" grams", {maxWidth: 120, closeButton: true});
+    }
+  };
+  // AJAX call to get meteorites from index route and pass them to
+  // the makeMeteoriteMarkers function
+  function getMeteorites() {
+    $.ajax({
+      url: '/meteorites/top_100',
+      type: 'GET'
+    })
+    .done(function(response) {
+      console.log("Success! The Ajax call worked.");
+      console.log(response[0]);
+      // console.log(response.meteorites[5]);
+      makeMeteoriteMarkers(response, response.length);
+    })
+    .fail(function() {
+      console.log("error, because it did not work!");
+    })
+  };
+  // Run getMeteorites function
+  getMeteorites();
+
+  // -----------------------------------------------------
 
   var speedDivisor = 150;
   var before = null;
@@ -24,13 +56,13 @@ function initializeWebGL() {
   $('.plusZoom').on('click', function(e) {
     var currentZoom = earth.getZoom();
     console.log("zoom level is currently " + currentZoom);
-    earth.setZoom(currentZoom + 1.0);
+    earth.setZoom(currentZoom + 0.5);
   });
 
   $('.minusZoom').on('click', function(e) {
     var currentZoom = earth.getZoom();
     console.log("zoom level is currently " + currentZoom);
-    earth.setZoom(currentZoom - 1.0);
+    earth.setZoom(currentZoom - 0.5);
   });
 
   // Stop/Start Globe Rotating button

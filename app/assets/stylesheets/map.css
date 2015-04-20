@@ -1,5 +1,6 @@
 /* Google Maps Map */
 
+/* Debug */
 /** {
     border: 1px solid red;
 }*/
@@ -39,6 +40,10 @@
     background-color: white;
     width: 40px;
     height: 20px;
+}
+
+.webgl_controllers {
+    display: inline;
 }
 
 .stop_moving p {
