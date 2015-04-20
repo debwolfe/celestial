@@ -10,37 +10,38 @@ function initializeWebGL() {
   var marker2 = WE.marker([-19.583330, 17.916670]).addTo(earth);
   marker2.bindPopup("<b>Hoba</b><br>Largest Meteorite!", {maxWidth: 120, closeButton: true});
 
-  // Start a simple rotation animation
+  var speedDivisor = 150;
   var before = null;
   requestAnimationFrame(function animate(now) {
     var c = earth.getPosition();
     var elapsed = before ? now - before : 0;
     before = now;
-    earth.setCenter([c[0], c[1] + 0.1 * (elapsed / 150)]);
+    earth.setCenter([c[0], c[1] + 0.1 * (elapsed / speedDivisor)]);
     requestAnimationFrame(animate);
   });
 
-  // When hovering over globe, cursor is hand
-  earth.on('hover', function(e) {
-    cursor: hand;
-  });
-
-  // Zoom in / zoom out with buttons
-  $('.zoom_in').on('click', function(e) {
+  // Zoom in & zoom out with Font Awesome Icon "Buttons"
+  $('.plusZoom').on('click', function(e) {
     var currentZoom = earth.getZoom();
     console.log("zoom level is currently " + currentZoom);
     earth.setZoom(currentZoom + 1.0);
   });
 
-  $('.zoom_out').on('click', function(e) {
+  $('.minusZoom').on('click', function(e) {
     var currentZoom = earth.getZoom();
     console.log("zoom level is currently " + currentZoom);
     earth.setZoom(currentZoom - 1.0);
   });
 
-  // Stop globe rotating button
+  // Stop/Start Globe Rotating button
   $('.stop_moving').on('click', function(e) {
-    // 
+    if (speedDivisor === 150) {
+      speedDivisor = 100000000000000;
+      $('.stop_moving button').text("Rotate Globe");
+    } else {
+      speedDivisor = 150;
+      $('.stop_moving button').text("Stop Moving");
+    }
   });
 
 };
