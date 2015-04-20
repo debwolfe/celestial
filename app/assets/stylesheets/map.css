@@ -6,23 +6,22 @@
 }*/
 
 #map-canvas {
-    width: 80%;
-    height: 700px;
+    max-width: 80%;
+    height: 600px;
     margin: 0 auto;
     padding: 0;
     border: 2px #FFFFFF;
-    border-radius: 500px;
-
+    border-radius: 270px;
 }
 
 /* Mapbox Map */
-#current_location_map { 
+/*#current_location_map {
     width: 1000px;
     height: 700px;
     margin: 0 auto;
     padding: 0;
     border: 2px #000000;
-}
+}*/
 
 #earth_div {
     width: 700px;
