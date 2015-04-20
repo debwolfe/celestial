@@ -31,17 +31,89 @@
   <section id="slide-2" class="homeSlide">
     <div class="bcg">
       <div class="hsContainer">
-        <h2>Time Slide</h2>
-        <div id="map-canvas"></div>
-        <div id="slider" class="year_slider"></div>
-        <div id="min_year">1800</div>
-        <%=image_tag "play.png", {id: "play_button"}%>
-        <div id="max_year">2013</div>
+        <div class="col-span-6">
+          <nav>
+            <menu>Interesting Meteorites</menu>
+              <a href="#">
+                <card>
+                  <img src='<%= asset_path "Hoba_image.jpg" %>'>
+                  Hoba
+                </card>
+              </a>
 
-        <input id="year_indicator" value="1800">
+              <a href="#">
+                <card>
+                  <image></image>
+                  <text>Hoba</text>
+                </card>
+              </a>
+
+              <a href="#">
+                <card>
+                  <image></image>
+                  <text>Hoba</text>
+                </card>
+              </a>
+
+              <a href="#">
+                <card>
+                  <image></image>
+                  <text>Hoba</text>
+                </card>
+              </a>
+
+              <a href="#">
+                <card>
+                  <image></image>
+                  <text>Hoba</text>
+                </card>
+              </a>
+
+              <a href="#">
+                <card>
+                  <image></image>
+                  <text>Hoba</text>
+                </card>
+              </a>
+
+              <a href="#">
+                <card>
+                  <image></image>
+                  <text>Hoba</text>
+                </card>
+              </a>
+
+              <a href="#">
+                <card>
+                  <image></image>
+                  <text>Hoba</text>
+                </card>
+              </a>
+
+              <a href="#">
+                <card>
+                  <image></image>
+                  <text>Hoba</text>
+                </card>
+              </a>
+
+              <a href="#">
+                <card>
+                  <image></image>
+                  <text>Hoba</text>
+                </card>
+              </a>
+
+          </nav>
+        </div>
+
+        <div class="col-span-6">
+          <p>Consider using 'dppx' units, as in CSS 'dpi' means dots-per-CSS-inch, not dots-per-physical-inch, so does not correspond to the actual 'dpi' of a screen. In media query expression: (min-resolution: 144dpi)</p>
+        </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
   <section id="slide-3" class="homeSlide">
     <div class="bcg">
@@ -65,7 +137,9 @@
     <div class="bcg">
       <div class="hsContainer">
         <h2>Meteorites by Hemisphere</h2>
-        <div id="chart"></div>
+          <div id="chart"></div>
+        <h2>Meteorites by Year</h2>
+          <div id="chart2"></div>
       </div>
     </div>
   </section>
@@ -73,12 +147,16 @@
   <section id="slide-5" class="homeSlide">
     <div class="bcg">
       <div class="hsContainer">
-      <h2>Meteorites by Year</h2>
-        <div id="chart2"></div>
+        <h2>Time Slide</h2>
+        <div id="map-canvas"></div>
+        <div id="slider" class="year_slider"></div>
+        <div id="min_year">1800</div>
+        <%=image_tag "play.png", {id: "play_button"}%>
+        <div id="max_year">2013</div>
+        <input id="year_indicator" value="1800">
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 <section id="slide-6" class="homeSlide">
   <div class="bcg">
