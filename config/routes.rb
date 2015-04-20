@@ -19,6 +19,8 @@ Rails.application.routes.draw do
 
   get 'meteorites/group_by_year', to: 'meteorites#group_by_year'
 
+    get 'meteorites/group_by_decade', to: 'meteorites#group_by_decade'
+
   get 'meteorites/hemispheres', to: 'meteorites#hemispheres'
 
   resources :meteorites, only: [:index, :show]
