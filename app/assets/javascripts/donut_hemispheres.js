@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
     var chart = c3.generate({
         data: {
             columns: [
