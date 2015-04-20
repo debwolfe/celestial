@@ -50,7 +50,7 @@ function initializeGoogleMaps() {
     },
 
     zoom: 2,
-    center: new google.maps.LatLng(40, 90),
+    center: new google.maps.LatLng(0, 0),
     mapTypeId: 'Styled',
     scrollwheel: false,
     disableDefaultUI: false

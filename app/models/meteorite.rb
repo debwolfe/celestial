@@ -1,6 +1,10 @@
 class Meteorite < ActiveRecord::Base
   validates_presence_of :name, :mass, :year, :reclat, :reclong
 
+  before_create do
+    self.decade = year / 10 * 10
+  end
+
   def self.hemisphere(hemisphere)
     case hemisphere
     when 'northeast'

@@ -36,8 +36,12 @@ class MeteoritesController < ApplicationController
   end
 
   def group_by_year
-    meteorites_by_year = {}
-    meteorites = Meteorite.group(:year).count
+    meteorites = Meteorite.where("year >=1800").group(:year).count
+    render json: meteorites
+  end
+
+  def group_by_decade
+    meteorites = Meteorite.where("year >=1800").group(:decade).count
     render json: meteorites
   end
 
