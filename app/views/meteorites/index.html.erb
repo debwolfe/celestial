@@ -7,7 +7,6 @@
 </div>
 
 <main>
-
   <section id="slide-1" class="homeSlide">
     <div class="bcg">
       <div class="hsContainer">
@@ -19,167 +18,52 @@
   <div id='cssmenu'>
     <ul>
       <li class='active'><a href="#slide-2">Introduction</a></li>
-      <li><a href='#slide-3'>Time Slide</a></li>
-      <li><a href='#slide-4'>Globe</a></li>
-      <li><a href='#slide-5'>Graphics</a></li>
-      <li><a href='#slide-6'>Graphics</a></li>
+      <li><a href='#slide-3'>Graphics</a></li>
+      <li><a href='#slide-4'>Graphics</a></li>
+      <li><a href='#slide-5'>Globe</a></li>
+      <li><a href='#slide-6'>Time Slide</a></li>
       <li><a href='#slide-7'>Prehistoric Impacts</a></li>
     </ul>
   </div>
 
-
   <section id="slide-2" class="homeSlide">
-    <div class="bcg">
-      <div class="hsContainer">
-        <div class="col-span-6">
-          <nav>
-            <menu>Interesting Meteorites</menu>
-              <a href="#">
-                <card>
-                  <img src='<%= asset_path "Hoba_image.jpg" %>'>
-                  Hoba
-                </card>
-              </a>
-
-              <a href="#">
-                <card>
-                  <image></image>
-                  <text>Hoba</text>
-                </card>
-              </a>
-
-              <a href="#">
-                <card>
-                  <image></image>
-                  <text>Hoba</text>
-                </card>
-              </a>
-
-              <a href="#">
-                <card>
-                  <image></image>
-                  <text>Hoba</text>
-                </card>
-              </a>
-
-              <a href="#">
-                <card>
-                  <image></image>
-                  <text>Hoba</text>
-                </card>
-              </a>
-
-              <a href="#">
-                <card>
-                  <image></image>
-                  <text>Hoba</text>
-                </card>
-              </a>
-
-              <a href="#">
-                <card>
-                  <image></image>
-                  <text>Hoba</text>
-                </card>
-              </a>
-
-              <a href="#">
-                <card>
-                  <image></image>
-                  <text>Hoba</text>
-                </card>
-              </a>
-
-              <a href="#">
-                <card>
-                  <image></image>
-                  <text>Hoba</text>
-                </card>
-              </a>
-
-              <a href="#">
-                <card>
-                  <image></image>
-                  <text>Hoba</text>
-                </card>
-              </a>
-
-          </nav>
-        </div>
-
-        <div class="col-span-6">
-          <p>Consider using 'dppx' units, as in CSS 'dpi' means dots-per-CSS-inch, not dots-per-physical-inch, so does not correspond to the actual 'dpi' of a screen. In media query expression: (min-resolution: 144dpi)</p>
-        </div>
-      </div>
+      <%= render "interesting_meteorites" %>
     </div>
-  </div>
-</section>
+  </section>
 
   <section id="slide-3" class="homeSlide">
-    <div class="bcg">
       <div class="hsContainer">
-        <div class="webgl_controllers">
-          <div class="stop_moving">
-            <button>Stop Moving</button>
-          </div>
-          <div class="small_white_square">
-            <i class="plusZoom fa fa-plus-square"></i>
-            <i class="minusZoom fa fa-minus-square"></i>
-          </div>
-        </div>
-        <div id="earth_div">
-        </div>
+        <%= render "webgl" %>
       </div>
-    </div>
   </section>
 
   <section id="slide-4" class="homeSlide">
-    <div class="bcg">
       <div class="hsContainer">
-        <h2>Meteorites by Hemisphere</h2>
-          <div id="chart"></div>
-        <h2>Meteorites by Year</h2>
-          <div id="chart2"></div>
+        <%= render "charts" %>
       </div>
-    </div>
   </section>
 
   <section id="slide-5" class="homeSlide">
-    <div class="bcg">
-      <div class="hsContainer">
-        <h2>Time Slide</h2>
-        <div id="map-canvas"></div>
-        <div id="slider" class="year_slider"></div>
-        <div id="min_year">1800</div>
-        <%=image_tag "play.png", {id: "play_button"}%>
-        <div id="max_year">2013</div>
-        <input id="year_indicator" value="1800">
-      </div>
+    <div class="hsContainer">
+      <%= render "google_map" %>
     </div>
   </section>
 
 <section id="slide-6" class="homeSlide">
-  <div class="bcg">
     <div class="hsContainer">
-
-    </div>
+      <%= render "descriptions" %>
   </div>
 </section>
 
 <section id="slide-7" class="homeSlide">
-  <div class="bcg">
     <div class="hsContainer">
-
-    </div>
+      <%= render "slide_7" %>
   </div>
 </section>
 
 <section id="slide-8" class="homeSlide">
-  <div class="bcg">
     <div class="hsContainer">
-
     </div>
-  </div>
 </section>
 
 </main>
