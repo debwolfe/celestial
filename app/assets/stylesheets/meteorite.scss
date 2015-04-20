@@ -37,7 +37,7 @@ body {
   line-height: 1.4;
 }
 
-.title{
+.title {
   color: white;
   text-align: right;
   position: absolute;
@@ -228,25 +228,39 @@ main {
   top: auto;
 }
 
-.year_slider {
+#slide-2 .year_slider {
   margin: 0 auto;
   width: 80%;
+  // padding: 2px;
 }
 
-#year_indicator {
+#slide-2 #year_indicator {
   color: yellow;
-  width: 40px;
+  background-color: transparent;
+  border: 0px;
+  width: 80px;
+  display: block;
+  margin: 0 auto;
   position: relative;
+  padding: 10px;
+  font-size: 30px;
+}
+
+#slide-2 .ui-slider-handle {
+  margin-top: 2px;
+}
+
+#slide-2 #min_year, #max_year {
+  color: #aaaaaa;
+  width: 40px;
+  position: absolute;
   padding: 10px;
 }
 
-//#min_year, #max_year{
-//  color: yellow;
-//  width: 40px;
-//  position: relative;
-//  padding: 10px;
-//}
-
+#slide-2 #play_button {
+  position: absolute;
+  width: 40px;
+}
 
 /* Slide 3 */
 #slide-3 .bcg {
