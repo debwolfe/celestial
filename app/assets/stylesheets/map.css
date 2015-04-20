@@ -1,4 +1,10 @@
 /* Google Maps Map */
+
+/* Debug */
+/** {
+    border: 1px solid red;
+}*/
+
 #map-canvas {
     width: 80%;
     height: 700px;
@@ -17,5 +23,32 @@
     padding: 0;
     border: 2px #000000;
 }
+
+#earth_div {
+    width: 700px;
+    height: 700px;
+    margin: 0 auto;
+    padding: 0;
+    border: 2px #FFFFFF;
+}
+
+.earth_div_container:hover {
+    cursor: hand;
+}
+
+.small_white_square {
+    background-color: white;
+    width: 40px;
+    height: 20px;
+}
+
+.webgl_controllers {
+    display: inline;
+}
+
+.stop_moving p {
+    color: white;
+}
+/*style="width: 700px;height: 700px;margin: 0 auto;padding: 0;border: 2px #FFFFFF; touch-action: non;*/
 
 /* Above formatting in line form */
