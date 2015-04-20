@@ -351,46 +351,6 @@ main {
   background-image: url('bcg_slide-2.jpg')
 }
 
-#slide-2 .hsContent {
-  margin-left: -450px;
-  bottom: 200px;
-  top: auto;
-}
-
-#slide-2 .year_slider {
-  margin: 0 auto;
-  width: 80%;
-  // padding: 2px;
-}
-
-#slide-2 #year_indicator {
-  color: yellow;
-  background-color: transparent;
-  border: 0px;
-  width: 80px;
-  display: block;
-  margin: 0 auto;
-  position: relative;
-  padding: 10px;
-  font-size: 30px;
-}
-
-#slide-2 .ui-slider-handle {
-  margin-top: 2px;
-}
-
-#slide-2 #min_year, #max_year {
-  color: #aaaaaa;
-  width: 40px;
-  position: absolute;
-  padding: 10px;
-}
-
-#slide-2 #play_button {
-  position: absolute;
-  width: 40px;
-}
-
 /* Slide 3 */
 #slide-3 .bcg {
   background-image: url('bcg_slide-3.jpg')
@@ -407,6 +367,7 @@ main {
 
 /* Slide 4 */
 #slide-4 .bcg {
+  // background-color: #fff;
   background-image: url('bcg_slide-3.jpg')
 }
 
@@ -422,13 +383,52 @@ main {
 
 /* Slide 5 */
 #slide-5 .bcg {
-  background-color: #fff;
+  background-image: url('bcg_slide-2.jpg')
 }
 
 #slide-5 .hsContent {
   top: auto;
 }
 
+#slide-5 .hsContent {
+  margin-left: -450px;
+  bottom: 200px;
+  top: auto;
+}
+
+#slide-5 .year_slider {
+  margin: 0 auto;
+  width: 80%;
+  // padding: 2px;
+}
+
+#slide-5 #year_indicator {
+  color: yellow;
+  background-color: transparent;
+  border: 0px;
+  width: 80px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  padding: 10px;
+  font-size: 30px;
+}
+
+#slide-5 .ui-slider-handle {
+  margin-top: 2px;
+}
+
+#slide-5 #min_year, #max_year {
+  color: #aaaaaa;
+  width: 40px;
+  position: absolute;
+  padding: 10px;
+}
+
+#slide-5 #play_button {
+  position: absolute;
+  width: 40px;
+}
 /* Slide 6 */
 #slide-6 .bcg {
   background-image: url('main.jpg')
