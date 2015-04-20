@@ -3,7 +3,7 @@ Site Introduction in slide-2:
 Our Earth provides an atmosphere and home for animals and plants unlike any other planet we know of. Earth does this as a member of our Solar System that we share with diverse bodies of mass including a star, other planets, many moons, comets, asteroids and countless meteorites. Meteorites are crumbs of asteroids and comets that come to stay with us here on Earth. This is celestial, a site that presents meteorites through profiles, pictures, graphs, maps and a globe.
 
 Profile on Willamette Meteorite -
-This is the Willamette Meteorite, it was discovered in Oregon and remains the largest meteorite found in the North American continent. It has religious significance to the Grand Ronde Native American Tribes of that region, they call it Tomanowos. The Willamette Meteorite has a distinct spongy appearance because its time on earth caused chemical reactions to produce acid that wore away parts of the original mass. Both of these featured picutres were taken in the American Museum of Natural History. The picture with the boys was taken in 1910; the meteorite is still in the Museum, but we can't touch it anymore.
+This is the Willamette Meteorite, it was discovered in Oregon and remains the largest meteorite found in the North American continent. It was scientifically discovered in 1902. It has religious significance to the Grand Ronde Native American Tribes of that region, they call it Tomanowos. The Willamette Meteorite has a distinct spongy appearance because its time on earth caused chemical reactions to produce acid that wore away parts of the original mass. Both of these featured picutres were taken in the American Museum of Natural History. The picture with the boys was taken in 1910; the meteorite is still in the Museum, but we can't touch it anymore.
 
 image -
 
@@ -12,4 +12,16 @@ http://offbeatoregon.com/Images/H1001c-willamette-meteorite/meteorite-1910-boys-
 http://upload.wikimedia.org/wikipedia/commons/8/86/Willamette_meteorite_AMNH.jpg
 
 
-Profile on Hoba Meteorite
+Profile on Hoba Meteorite -
+ This is the Hoba Meteorite, the largest meteorite known on Earth and it was scientifically discovered in 1920. It is also the most massive naturally ocurring piece of iron (Fe) on the surface of the Earth. As the graph here shows the Hoba is 84% iron with a mass of 60 metric tons - 50 tons of iron. You may also notice the flatness of the object as well. Scientists theorize the Hoba meteorite skipped across our Earth's airspace like a flat stone over water since air is also a fluid and remained in one piece. The atmosphere could provide enough resistance to even an object this massive at its outer edge. This picture is of German geologists surveying the Hoba Meteorite in 1929.
+
+images -
+http://giantcrystals.strahlen.org/africa/hoba3.jpg
+
+c3 graph on its mineral content since it is so heavy in iron (Fe)
+
+Profile on Cape York Meteorite-
+This is a piece of the Cape York Meteorite, a collection of parts known to the Inuit community in four distinct parts they called the Tent, the Man, the Woman and the Dog in their native language. It was discovered scientifically in 1818, but like many of the meteorites we profile it probably fell to Earth more than 10,000 years ago.
+
+images -
+
