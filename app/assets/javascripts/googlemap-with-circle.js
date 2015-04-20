@@ -64,6 +64,7 @@ function drawCircles(year) {
   meteo_data[year].forEach(
       function (element, index, array) {
         console.log(element);
+
         var meteoriteCircle = {
           strokeColor: '#FF0000',
           strokeOpacity: 0.8,
@@ -73,6 +74,9 @@ function drawCircles(year) {
           map: map,
           center: new google.maps.LatLng(element[1], element[2]),
           radius: Math.sqrt(element[0]) * 500
+        };
+        if (element[1] > 76) {
+          meteoriteCircle["radius"] = Math.sqrt(element[0]) * 100;
         };
 
         var meteoObj = new google.maps.Circle(meteoriteCircle)
