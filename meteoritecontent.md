@@ -3,7 +3,7 @@ Site Introduction in slide-2:
 Our Earth provides an atmosphere and home for animals and plants unlike any other planet we know of. Earth does this as a member of our Solar System that we share with diverse bodies of mass including a star, other planets, many moons, comets, asteroids and countless meteorites. Meteorites are crumbs of asteroids and comets that come to stay with us here on Earth. This is celestial, a site that presents meteorites through profiles, pictures, graphs, maps and a globe.
 
 Profile on Willamette Meteorite -
-This is the Willamette Meteorite, it was discovered in Oregon and remains the largest meteorite found in the North American continent. It was discovered in modern times by the settler Ellis Hughes in 1902. Hughes did not own the land but knew it was an important find so he secretly moved the 14,000 kg meteorite to his own land over the next 90 days. His It has religious significance to the Grand Ronde Native American Tribes of that region, they call it Tomanowos. The Willamette Meteorite has a distinct spongy appearance because its time on earth caused chemical reactions to produce acid that wore away parts of the original mass. Both of these featured picutres were taken in the American Museum of Natural History. The picture with the boys was taken in 1910; the meteorite is still in the Museum, but we can't touch it anymore.
+This is the Willamette Meteorite, it was discovered in Oregon and remains the largest meteorite found in the North American continent. It was discovered in modern times by the settler Ellis Hughes in 1902. Hughes did not own the land but knew it was an important find so he secretly moved the 14,000 kg meteorite to his own land over the next 90 days. His It has religious significance to the Grand Ronde Native American Tribes of that region, they call it Tomanowos. The Willamette Meteorite has a distinct spongy appearance because its time on earth caused chemical reactions to produce acid that wore away parts of the original mass. Both of these featured picutres were taken in the American Museum of Natural History. The picture with the boys was taken in 1910; the meteorite is still in the Museum, but we can't sit in it anymore.
 
 image -
 
@@ -31,22 +31,22 @@ lets try to do a google map small window AS AN IMAGE or SCREENSHOT of all the fr
 http://en.wikipedia.org/wiki/Cape_York_meteorite (specimen section)
 http://www.amnh.org/exhibitions/permanent-exhibitions/earth-and-planetary-sciences-halls/arthur-ross-hall-of-meteorites/meteorites/fragments-of-cape-york has some guidance on this
 
-Profile on
+Profile on Sikhote-Alin Meteorite-
+This meteorite landed in Russia relatively recently on February 12, 1947 at 10:38 AM. Its recent landing means we have many first hand accounts about the actual landing as well as the aftermath of the event. One of the most striking eyewitness descriptions say the bolide released in the event was brighter than our sun. The eyewitness accounts also said the sound could be heard for 300km and a 30km long pillar of smoke behind the objects was visible for hours after the fall. Scientists estimate as much as 100 metric tons of debris came into our atmosphere on that day, by the time it hit the Earth our NASA data say it had a mass of 23 metric tons. The black and white photograph featured here shows someone attempting to retrieve a large fragment of the meteorite using a truck. The artist P.I. Medvedev was sitting at his window during the meteorite strike, shown here is his painting of the thick pillar of smoke resulting from the fall.
 
-
+images-
+http://www.catchafallingstar.com/Sikhotefall1.gif <- hopefully we can use a .gif file type
+http://en.wikipedia.org/wiki/Sikhote-Alin_meteorite#/media/File:Sikhote-Alin_stamp_1957.jpg
 
 meteorite locations:
 
-russia - great story, regional
 south america  - second biggest, regional
 china - regional
-australia - regional
-north africa - newest big one
-most valuable
 
 done:
 north america - great story, regional
 greenland - great story, regional
 south africa - regional, physics
+russia - great story, regional
 
 
