@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 
@@ -24,3 +25,6 @@ complete parallax transitions from black to new backround - http://jsfiddle.net/
 - perhaps give a rotating away feel of graphs rendered
 
 "+ meteorites[i].year.match(/\d{4}/g) +"
+=======
+any thoughts can go here
+>>>>>>> master
