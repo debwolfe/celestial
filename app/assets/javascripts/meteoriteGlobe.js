@@ -17,24 +17,23 @@ function initializeWebGL() {
     var marker;
     for (i=0; i<num_meteorites; i++) {
       marker = WE.marker([meteorites[i].reclat, meteorites[i].reclong]).addTo(earth);
-      marker.bindPopup("<b>"+ meteorites[i].name +"</b><br>Mass: "+ meteorites[i].mass +" grams", {maxWidth: 120, closeButton: true});
+      marker.bindPopup("<b>"+ meteorites[i].name +"</b><br>Mass: "+ meteorites[i].mass +" (g)<br>Year: "+ meteorites[i].year.match(/\d{4}/g) +" ", {maxWidth: 120, closeButton: true});
     }
   };
   // AJAX call to get meteorites from index route and pass them to
   // the makeMeteoriteMarkers function
   function getMeteorites() {
     $.ajax({
-      url: '/meteorites/top_100',
+      url: '/meteorites/top_10',
       type: 'GET'
     })
     .done(function(response) {
       console.log("Success! The Ajax call worked.");
       console.log(response[0]);
-      // console.log(response.meteorites[5]);
       makeMeteoriteMarkers(response, response.length);
     })
     .fail(function() {
-      console.log("error, because it did not work!");
+      console.log("Error, Ajax call did not work!");
     })
   };
   // Run getMeteorites function
@@ -42,6 +41,7 @@ function initializeWebGL() {
 
   // -----------------------------------------------------
 
+  // Rotate Globe
   var speedDivisor = 150;
   var before = null;
   requestAnimationFrame(function animate(now) {
@@ -74,6 +74,11 @@ function initializeWebGL() {
       speedDivisor = 150;
       $('.stop_moving button').text("Stop Moving");
     }
+  });
+
+  // Close popup
+  $('#earth_div').on('click', '.we-pp-close', function(e) {
+    e.preventDefault();
   });
 
 };

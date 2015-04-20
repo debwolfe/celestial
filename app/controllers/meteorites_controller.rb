@@ -8,6 +8,11 @@ class MeteoritesController < ApplicationController
     render json: meteorite
   end
 
+  def top_10
+    meteorites = Meteorite.order('mass DESC LIMIT 10')
+    render json: meteorites
+  end
+
   def top_100
     meteorites = Meteorite.order('mass DESC LIMIT 100')
     render json: meteorites
