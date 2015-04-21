@@ -38,9 +38,16 @@ images-
 http://www.catchafallingstar.com/Sikhotefall1.gif <- hopefully we can use a .gif file type
 http://en.wikipedia.org/wiki/Sikhote-Alin_meteorite#/media/File:Sikhote-Alin_stamp_1957.jpg
 
-meteorite locations:
+Profile on Campo del Cielo Meteorite-
+This meteorite has a storied history of search and excavation. The meteorite was first documented by a Northern Argentina military in 1576 while in search for a source of iron. The Native community in the region said they found iron for their weapons in the Piguem Nonralta or Campo del Cielo (Field of Heaven) and claimed the mass fell from the sky. The military dismissed this claim and thought it was an iron mine. Several years later in 1783 another Spanish expedition led by Rubin de Celis discovered the mass of iron and thought again it was an iron mine. De Celis used explosives to excavate the "mine" only to discover the mass was a single object; he did however decide to send some samples to the Royal Society of London. In our graph you can see the modern estimated chemical composition of the meteorite compared to the theoretical composition of pure iron in Magnetite compounds on Earth. The Royal Society of London classified as a meteorite and the Native population was of course proven correct, the mass did come from the sky after all. Modern results of carbon-14 testing estimate the fall actually occured only 4,200 to 4,500 years ago. The total mass collected from the fall exceeds 100 metric tons with the largest single piece at 37 metric tons found in 1969 only 5 meters below the surface of the Campo del Cielo.
 
-south america  - second biggest, regional
+content-
+lets do another c3 donut chart of the composition of the meteorite- http://en.wikipedia.org/wiki/Campo_del_Cielo
+and another c3 on theoretical quality magnetite ore found on Earth - http://webmineral.com/data/Magnetite.shtml#.VTZzOa1VhHw
+
+Profile on
+
+meteorite locations:
 china - regional
 
 done:
@@ -48,5 +55,6 @@ north america - great story, regional
 greenland - great story, regional
 south africa - regional, physics
 russia - great story, regional
+south america  - second biggest, regional
 
 
