@@ -7,7 +7,7 @@
 
 #map-canvas {
     max-width: 80%;
-    height: 600px;
+    height: 550px;
     margin: 0 auto;
     padding: 0;
     border: 2px #FFFFFF;
@@ -48,9 +48,9 @@
     /*border: 1px solid blue;*/
 }
 
-.earth_div_container {
-    border: 1px solid green;
-}
+/*.earth_div_container {*/
+  /*  border: 1px solid green;*/
+/*}*/
 /* -------------------------- */
 
 .small_white_square {
