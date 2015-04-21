@@ -33,9 +33,21 @@ nav card:hover {
   background-color: pink;
 }
 
-.col-span-6 {
+.col-sm-5 {
   display: inline-block;
   vertical-align: middle;
-  width: 50%;
   background-color: red;
+}
+
+.col-sm-2 {
+  background-color: green;
+}
+
+.each_met_pic {
+  width: 100%;
+  height: 100%;
+}
+
+img {
+  border-radius: 5px;
 }
