@@ -11,6 +11,8 @@ Rails.application.routes.draw do
 
   get 'meteorites/biggest', to: 'meteorites#biggest'
 
+  get 'meteorites/top_10', to: 'meteorites#top_10'
+
   get 'meteorites/top_100', to: 'meteorites#top_100'
 
   get 'meteorites/by_year', to: 'meteorites#by_year'
