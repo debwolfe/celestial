@@ -71,6 +71,22 @@
   z-index: 10;
 }
 
+.carousel-control {
+  border: 5px purple solid;
+  background-color: black;
+  opacity: 0.8;
+  height: 15%;
+  margin: 15% 0;
+  width: 9%;
+}
+.carousel-control.right {
+ border-radius: 10px;
+ color: white;
+ float: right;
+}
+
+/*.glyphicon-chevron-right*/
+
 /* Declare heights because of positioning of img element */
 
 /*.carousel-inner > .item > img {

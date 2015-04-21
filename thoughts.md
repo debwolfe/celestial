@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-
-
-
 Items for Sunday April 19, 2015
 git workflow and pull-test then merge (ptm)
 360 feedback, are we proud of what we are building? are we happy with not pairing formally? lets ask again who is visiting our site?
@@ -25,6 +21,6 @@ complete parallax transitions from black to new backround - http://jsfiddle.net/
 - perhaps give a rotating away feel of graphs rendered
 
 "+ meteorites[i].year.match(/\d{4}/g) +"
-=======
+
 any thoughts can go here
->>>>>>> master
+
