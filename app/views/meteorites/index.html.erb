@@ -1,9 +1,9 @@
 
 <div id="preload">
-  <img src="assets/openingpicture.jpg">
-  <img src="assets/bcg_slide-2.jpg">
-  <img src="assets/bcg_slide-3.jpg">
-  <img src="assets/main.jpg">
+  <%= image_tag 'openingpicture.jpg' %>
+  <%= image_tag 'bcg_slide-2.jpg' %>
+  <%= image_tag 'bcg_slide-3.jpg' %>
+  <%= image_tag 'main.jpg' %>
 </div>
 
 <main>
@@ -17,12 +17,10 @@
 
   <div id='cssmenu'>
     <ul>
-      <li class='active'><a href="#slide-2">Introduction</a></li>
-      <li><a href='#slide-3'>Graphics</a></li>
-      <li><a href='#slide-4'>Graphics</a></li>
-      <li><a href='#slide-5'>Globe</a></li>
-      <li><a href='#slide-6'>Time Slide</a></li>
-      <li><a href='#slide-7'>Prehistoric Impacts</a></li>
+      <li class='active'><a href="#slide-2">Illustrations</a></li>
+      <li><a href='#slide-3'>Graphs</a></li>
+      <li><a href='#slide-4'>Globe</a></li>
+      <li><a href='#slide-5'>Time Slide</a></li>
     </ul>
   </div>
 
@@ -36,12 +34,13 @@
 
   <section id="slide-3" class="homeSlide">
       <div class="hsContainer">
-        <%= render "webgl" %>
+        <%= render "charts" %>
       </div>
   </section>
 
   <section id="slide-4" class="homeSlide">
       <div class="hsContainer">
+        <%= render "webgl" %>
       </div>
   </section>
 
@@ -50,21 +49,5 @@
       <%= render "google_map" %>
     </div>
   </section>
-
-<section id="slide-6" class="homeSlide">
-    <div class="hsContainer">
-  </div>
-</section>
-
-<section id="slide-7" class="homeSlide">
-    <div class="hsContainer">
-      <%= render "slide_7" %>
-  </div>
-</section>
-
-<section id="slide-8" class="homeSlide">
-    <div class="hsContainer">
-    </div>
-</section>
 
 </main>

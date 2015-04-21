@@ -35,7 +35,9 @@ Rails.application.configure do
   # Checks for improperly declared sprockets dependencies.
   # Raises helpful error messages.
   config.assets.raise_runtime_errors = true
-  # FOR GLYPHICON
+  # FOR GLYPHICON MAY NOT NEED
+  # RAILS_ENV=production bundle exec rake assets:precompile
+  # use asset_path('running.jpg')
   config.assets.precompile += %w( .svg .eot .woff .ttf )
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true

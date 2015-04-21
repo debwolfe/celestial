@@ -1,0 +1,14 @@
+/*
+ * Title styling for small celestial word
+ * placed in bottom right corner of top div
+ */
+
+.title {
+  color: white;
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 10%;
+  font-family: 'Cabin Sketch', cursive;
+}
