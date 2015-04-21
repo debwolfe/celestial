@@ -8,6 +8,11 @@ class MeteoritesController < ApplicationController
     render json: meteorite
   end
 
+  def top_10
+    meteorites = Meteorite.order('mass DESC LIMIT 10')
+    render json: meteorites
+  end
+
   def top_100
     meteorites = Meteorite.order('mass DESC LIMIT 100')
     render json: meteorites
@@ -36,8 +41,12 @@ class MeteoritesController < ApplicationController
   end
 
   def group_by_year
-    meteorites_by_year = {}
-    meteorites = Meteorite.group(:year).count
+    meteorites = Meteorite.where("year >=1800").group(:year).count
+    render json: meteorites
+  end
+
+  def group_by_decade
+    meteorites = Meteorite.where("year >=1800").group(:decade).count
     render json: meteorites
   end
 

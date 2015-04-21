@@ -1,17 +1,17 @@
 /* Google Maps Map */
 
 /* Debug */
-/** {
-    border: 1px solid red;
-}*/
+* {
+    /*border: 1px solid red;*/
+}
 
 #map-canvas {
     max-width: 80%;
-    height: 600px;
+    height: 550px;
     margin: 0 auto;
     padding: 0;
     border: 2px #FFFFFF;
-    border-radius: 270px;
+    border-radius: 210px;
 }
 
 /* Mapbox Map */
@@ -23,17 +23,35 @@
     border: 2px #000000;
 }*/
 
+/* -------------------------- */
 #earth_div {
-    width: 700px;
+    width: 60%;
     height: 700px;
     margin: 0 auto;
     padding: 0;
     border: 2px #FFFFFF;
+    float: left;
+    /*border: 1px solid purple;*/
 }
 
-.earth_div_container:hover {
-    cursor: hand;
+#earth_div_left {
+    width: 19.9%;
+    height: 700px;
+    float: left;
+    /*border: 1px solid yellow;*/
 }
+
+#earth_div_right {
+    width: 19%;
+    height: 700px;
+    float: right;
+    /*border: 1px solid blue;*/
+}
+
+/*.earth_div_container {*/
+  /*  border: 1px solid green;*/
+/*}*/
+/* -------------------------- */
 
 .small_white_square {
     background-color: white;
@@ -45,9 +63,18 @@
     display: inline;
 }
 
-.stop_moving p {
-    color: white;
+.stop_moving {
+    text-align: center;
+    float: right;
+    display: inline;
 }
+
+.stop_moving_offestter_box {
+    height: 50%;
+    width: 100%;
+    /*border: 2px solid white;*/
+}
+
 /*style="width: 700px;height: 700px;margin: 0 auto;padding: 0;border: 2px #FFFFFF; touch-action: non;*/
 
 /* Above formatting in line form */
