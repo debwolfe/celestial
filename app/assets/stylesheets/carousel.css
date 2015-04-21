@@ -5,8 +5,66 @@
 
 /* Carousel base class */
 .carousel {
-  height: 400px;
-  margin-bottom: 10px;
+  height: 700px;
+  margin: 30px 3% 10px 3%;
+  border: 3px pink solid;
+  background-color: black;
+}
+
+.carousel-inner {
+  border: 3px blue solid;
+  height: 100%;
+}
+
+.item {
+  margin: 0 2% 0 2%;
+  height: 700px;
+  border: 3px orange solid;
+  /*background-color: #777;*/
+  color: #fff;
+}
+
+.item h3 {
+  border: 3px pink solid;
+  text-align: center;
+}
+
+.item p {
+  border: 3px blue solid;
+  width: 48%;
+  float: right;
+  font-size: 20px;
+}
+
+.item .figure_div {
+  border: 3px green solid;
+  height: 550px;
+  width: 48%;
+  float: left;
+  margin: 0 0 25px 0;
+  max-height: 100%;
+
+}
+
+.item figure {
+  border: 3px yellow solid;
+  max-height: 100%;
+
+}
+
+.item .figure_div figure img {
+  width: 100%;
+  border: 3px orange solid;
+  overflow: hidden;
+  max-height: 100%;
+
+}
+
+.pie_chart {
+  width: 48%;
+  height: 50px;
+  float: right;
+  border: 3px purple solid;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -14,11 +72,7 @@
 }
 
 /* Declare heights because of positioning of img element */
-.carousel .item {
-  height: 400px;
-  background-color: #777;
-  color: #fff;
-}
+
 /*.carousel-inner > .item > img {
   position: absolute;
   top: 0;
