@@ -6,6 +6,16 @@
   <img src="assets/main.jpg">
 </div>
 
+  <div id='cssmenu'>
+    <ul>
+      <li><a href="#slide-1">Home</a></li>
+      <li><a href='#slide-2'>Introduction</a></li>
+      <li><a href='#slide-3'>Globe</a></li>
+      <li><a href='#slide-4'>Charts</a></li>
+      <li><a href='#slide-5'>Impacts</a></li>
+    </ul>
+  </div>
+
 <main>
   <section id="slide-1" class="homeSlide">
     <div class="bcg">
@@ -15,16 +25,7 @@
     </div>
   </section>
 
-  <div id='cssmenu'>
-    <ul>
-      <li><a href="#slide-1">Home</a></li>
-      <li><a href='#slide-2'>Introduction</a></li>
-      <li><a href='#slide-3'>Globe</a></li>
-      <li><a href='#slide-4'>Charts</a></li>
-      <li><a href='#slide-5'>Impacts</a></li>
-      <!-- <li><a href='#slide-7'>Prehistoric Impacts</a></li> -->
-    </ul>
-  </div>
+
 
   <section id="slide-2" class="homeSlide">
     <div class="bcg">
@@ -42,6 +43,7 @@
 
   <section id="slide-4" class="homeSlide">
       <div class="hsContainer">
+        <%= render "charts"%>
       </div>
   </section>
 
@@ -51,21 +53,11 @@
     </div>
   </section>
 
-<section id="slide-6" class="homeSlide">
-    <div class="hsContainer">
-      <%= render "charts"%>
-  </div>
-</section>
-
-<section id="slide-7" class="homeSlide">
-    <div class="hsContainer">
-      <%= render "slide_7" %>
-  </div>
-</section>
-
-<section id="slide-8" class="homeSlide">
-    <div class="hsContainer">
+  <section id="slide-8" class="homeSlide">
+    <div class="bcg">
+      <div class="hsContainer">
+      </div>
     </div>
-</section>
+  </section>
 
 </main>

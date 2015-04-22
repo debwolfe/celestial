@@ -1,0 +1,60 @@
+/* Slide 5 */
+
+#map-canvas {
+    max-width: 80%;
+    height: 550px;
+    margin: 0 auto;
+    padding: 0;
+    border: 2px #FFFFFF;
+    border-radius: 210px;
+}
+
+
+#slide-5 .bcg {
+  background-image: url('bcg_slide-2.jpg')
+}
+
+#slide-5 .hsContent {
+  top: auto;
+}
+
+#slide-5 .hsContent {
+  margin-left: -450px;
+  bottom: 200px;
+  top: auto;
+}
+
+#slide-5 .year_slider {
+  margin: 1% auto;
+  width: 80%;
+  padding: 2px;
+}
+
+#slide-5 #year_indicator {
+  color: white;
+  background-color: transparent;
+  border: 1px white solid;
+  width: 100px;
+  display: block;
+  margin: 1% auto;
+  position: relative;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
+#slide-5 .ui-slider-handle {
+  margin-top: 2px;
+}
+
+#slide-5 #min_year, #max_year {
+  color: #ffffff;
+  position: absolute;
+  padding: 10px;
+}
+
+#slide-5 #play_button {
+  position: absolute;
+  margin: 1% auto;
+  width: 40px;
+}

@@ -1,0 +1,45 @@
+/* -------------------------- */
+#earth_div {
+    width: 60%;
+    height: 700px;
+    margin: 0 auto;
+    padding: 0;
+    border: 2px #FFFFFF;
+    float: left;
+}
+
+#earth_div_left {
+    width: 19.9%;
+    height: 700px;
+    float: left;
+}
+
+#earth_div_right {
+    width: 19%;
+    height: 700px;
+    float: right;
+}
+
+.small_white_square {
+    background-color: white;
+    width: 40px;
+    height: 20px;
+}
+
+.webgl_controllers {
+    display: inline;
+}
+
+.stop_moving {
+    text-align: center;
+    float: right;
+    display: inline;
+}
+
+.stop_moving_offestter_box {
+    height: 50%;
+    width: 100%;
+}
+
+
+/* Above formatting in line form */
