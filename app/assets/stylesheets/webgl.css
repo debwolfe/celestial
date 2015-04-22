@@ -41,5 +41,11 @@
     width: 100%;
 }
 
+#rotate-button{
+    text-align: center;
+    float: right;
+    display:inline;
+    width: 40px;
+}
 
 /* Above formatting in line form */
