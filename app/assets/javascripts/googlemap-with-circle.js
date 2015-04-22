@@ -67,7 +67,7 @@ const maxExplosionCircles = 100;
 var circles = [];
 
 function fadeoutCircle() {
-  if (circles.length > maxExplosionCircles){
+  if (circles.length > maxExplosionCircles) {
     return;
   }
 
@@ -171,29 +171,39 @@ $(function () {
     }
   });
 
+  $('#year_indicator').on("keydown", function () {
+    stopPlaying();
+  });
   $('#year_indicator').on("change", function () {
     $('#slider').slider('value', $('#year_indicator').val());
-
   });
+
+  function stopPlaying() {
+    $("#play_button").attr("src", "/assets/play.png");
+    playing = false;
+    clearInterval(play_interval);
+    clearInterval(fadeout_interval);
+  }
+
+  function startPlaying() {
+    $("#play_button").attr("src", "/assets/stop.png");
+    playing = true;
+    play_interval = setInterval(function () {
+      moveTick();
+    }, 1000);
+    fadeout_interval = setInterval(function () {
+      fadeoutCircle();
+    }, 150);
+  }
 
   $("#play_button").click(function () {
-    if (playing) {
-      $("#play_button").attr("src", "/assets/play.png");
-      playing = false;
-      clearInterval(play_interval);
-      clearInterval(fadeout_interval);
-    } else {
-      $("#play_button").attr("src", "/assets/stop.png");
-      playing = true;
-      play_interval = setInterval(function () {
-        moveTick();
-      }, 1000);
-      fadeout_interval = setInterval(function () {
-        fadeoutCircle();
-      }, 150);
-    }
-
-  });
+        if (playing) {
+          stopPlaying();
+        } else {
+          startPlaying();
+        }
+      }
+  );
 
 
 });
