@@ -1,10 +1,10 @@
 function cssMenu() {
 	$(window).on('scroll', function() {
-    if ($(window).scrollTop() > 700) {
+    if ($(window).scrollTop() > $(window).height()) {
     	$('#cssmenu').css('top', '0px');
     	$('#cssmenu').css('position', 'fixed');
-    } else if ($(window).scrollTop() < 700) {
-    	$('#cssmenu').css('top', '700px');
+    } else {
+    	$('#cssmenu').css('top', $(window).height());
     	$('#cssmenu').css('position', 'absolute');
     };
     for (i=0; i<5; i++) {

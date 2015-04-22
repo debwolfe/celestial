@@ -341,72 +341,71 @@ main {
   text-decoration: underline;
 }
 
-/* Slide 1 */
-#slide-1 .bcg {
+/* Slide-main */
+#slide-main .bcg {
   background-image: url('openingpicture.jpg')
 }
 
-#slide-1 .hsContent {
+#slide-main .hsContent {
   top: auto;
 }
 
-/* Slide 2 */
-#slide-2 .bcg {
+/* Slide-metes */
+#slide-metes .bcg {
   background-image: url('bcg_slide-2.jpg')
 }
 
-/* Slide 3 */
-#slide-3 .bcg {
-  background-image: url('bcg_slide-3.jpg')
+/* Slide-webgl */
+#slide-webgl .bcg {
+  background-image: url('bcg_slide-webgl.jpg')
 }
 
-#slide-3 .hsContent {
+#slide-webgl .hsContent {
   margin-left: -239px;
 }
 
-#slide-3 h2 {
+#slide-webgl h2 {
   color: #f2ead6;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-/* Slide 4 */
-#slide-4 .bcg {
-  // background-color: #fff;
-  background-image: url('bcg_slide-3.jpg')
+/* Slide-chart */
+#slide-chart .bcg {
+  background-image: url('bcg_slide-webgl.jpg')
 }
 
-#slide-4 .hsContent {
+#slide-chart .hsContent {
   margin-left: -450px;
 }
 
-#slide-4 h2 {
+#slide-chart h2 {
   background: none;
   padding-left: 0;
   padding-right: 0;
 }
 
-/* Slide 5 */
-#slide-5 .bcg {
+/* Slide-googlemap */
+#slide-googlemap .bcg {
   background-image: url('bcg_slide-2.jpg')
 }
 
-#slide-5 .hsContent {
+#slide-googlemap .hsContent {
   top: auto;
 }
 
-#slide-5 .hsContent {
+#slide-googlemap .hsContent {
   margin-left: -450px;
   bottom: 200px;
   top: auto;
 }
 
-#slide-5 .year_slider {
+#slide-googlemap .year_slider {
   margin: 0 auto;
   width: 80%;
   // padding: 2px;
 }
 
-#slide-5 #year_indicator {
+#slide-googlemap #year_indicator {
   color: white;
   background-color: transparent;
   border: 1px white solid;
@@ -419,45 +418,29 @@ main {
   text-align: center;
 }
 
-#slide-5 .ui-slider-handle {
+#slide-googlemap .ui-slider-handle {
   margin-top: 2px;
 }
 
-#slide-5 #min_year, #max_year {
+#slide-googlemap #min_year, #max_year {
   color: #aaaaaa;
   width: 40px;
   position: absolute;
   padding: 10px;
 }
 
-#slide-5 #play_button {
+#slide-googlemap #play_button {
   position: absolute;
   width: 40px;
 }
-/* Slide 6 */
-#slide-6 .bcg {
-  background-image: url('main.jpg')
+
+
+/* Slide-final */
+#slide-final .bcg {
+  background-image: url('finalpic.jpg')
 }
 
-#slide-6 .hsContent {
-  top: auto;
-}
-
-/* Slide 7 */
-#slide-7 .bcg {
-  background-image: url('main.jpg')
-}
-
-#slide-7 .hsContent {
-  top: auto;
-}
-
-/* Slide 8 */
-#slide-8 .bcg {
-  background-image: url('bcg_slide-8.jpg')
-}
-
-#slide-8 .hsContent {
+#slide-final .hsContent {
   top: auto;
 }
 
