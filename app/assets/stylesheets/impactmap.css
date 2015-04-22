@@ -25,9 +25,9 @@
 }
 
 #slide-5 .year_slider {
-  margin: 0 auto;
+  margin: 1% auto;
   width: 80%;
-  // padding: 2px;
+  padding: 2px;
 }
 
 #slide-5 #year_indicator {
@@ -48,13 +48,13 @@
 }
 
 #slide-5 #min_year, #max_year {
-  color: #aaaaaa;
-  width: 40px;
+  color: #ffffff;
   position: absolute;
   padding: 10px;
 }
 
 #slide-5 #play_button {
   position: absolute;
+  margin: 1% auto;
   width: 40px;
 }
