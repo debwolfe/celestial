@@ -19,11 +19,10 @@
   <div id='cssmenu'>
     <ul>
       <li><a href="#slide-main">Home</a></li>
-      <li><a href='#slide-metes'>Introduction</a></li>
+      <li><a href='#slide-metes'>Notable Meteorites</a></li>
       <li><a href='#slide-webgl'>Globe</a></li>
-      <li><a href='#slide-chart'>Charts</a></li>
-      <li><a href='#slide-googlemap'>Impacts</a></li>
-      <!-- <li><a href='#slide-7'>Prehistoric Impacts</a></li> -->
+      <li><a href='#slide-chart'>Impacts</a></li>
+      <li><a href='#slide-googlemap'>Charts</a></li>
     </ul>
   </div>
 
@@ -43,16 +42,16 @@
 
   <section id="slide-chart" class="homeSlide">
     <div class="hsContainer">
-      <%= render "charts"%>
+      <%= render "google_map" %>
     </div>
   </section>
 
   <section id="slide-googlemap" class="homeSlide">
     <div class="hsContainer">
-      <%= render "google_map" %>
+      <%= render "charts"%>
     </div>
   </section>
-  
+
   <section id="slide-final" class="homeSlide">
     <div class="bcg">
         <div class="hsContainer">
