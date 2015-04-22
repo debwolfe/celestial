@@ -171,7 +171,7 @@ $(function () {
     }
   });
 
-  $('#year_indicator').on("keydown", function () {
+  $('#year_indicator').on("click", function () {
     stopPlaying();
   });
   $('#year_indicator').on("change", function () {
