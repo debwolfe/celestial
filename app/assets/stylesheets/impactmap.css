@@ -10,51 +10,51 @@
 }
 
 
-#slide-5 .bcg {
-  background-image: url('bcg_slide-2.jpg')
+#slide-googlemap .bcg {
+    background-image: url('bcg_slide-2.jpg')
 }
 
-#slide-5 .hsContent {
-  top: auto;
+#slide-googlemap .hsContent {
+    top: auto;
 }
 
-#slide-5 .hsContent {
-  margin-left: -450px;
-  bottom: 200px;
-  top: auto;
+#slide-googlemap .hsContent {
+    margin-left: -450px;
+    bottom: 200px;
+    top: auto;
 }
 
-#slide-5 .year_slider {
-  margin: 1% auto;
-  width: 80%;
-  padding: 2px;
+#slide-googlemap .year_slider {
+    margin: 0 auto;
+    width: 80%;
+// padding: 2px;
 }
 
-#slide-5 #year_indicator {
-  color: white;
-  background-color: transparent;
-  border: 1px white solid;
-  width: 100px;
-  display: block;
-  margin: 1% auto;
-  position: relative;
-  padding: 10px;
-  font-size: 30px;
-  text-align: center;
+#slide-googlemap #year_indicator {
+    color: white;
+    background-color: transparent;
+    border: 1px white solid;
+    width: 100px;
+    display: block;
+    margin: 1% auto;
+    position: relative;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
 }
 
-#slide-5 .ui-slider-handle {
-  margin-top: 2px;
+#slide-googlemap .ui-slider-handle {
+    margin-top: 2px;
 }
 
-#slide-5 #min_year, #max_year {
-  color: #ffffff;
-  position: absolute;
-  padding: 10px;
+#slide-googlemap #min_year, #max_year {
+    color: #aaaaaa;
+    width: 40px;
+    position: absolute;
+    padding: 10px;
 }
 
-#slide-5 #play_button {
-  position: absolute;
-  margin: 1% auto;
-  width: 40px;
+#slide-googlemap #play_button {
+    position: absolute;
+    width: 40px;
 }
