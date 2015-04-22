@@ -65,14 +65,14 @@ function initializeWebGL() {
     earth.setZoom(currentZoom - 0.5);
   });
 
-  // Stop/Start Globe Rotating button
-  $('.stop_moving').on('click', function(e) {
+  // NEW Stop/Start Rotating Button
+  $('#rotate-button').on('click', function(e) {
     if (speedDivisor === 150) {
       speedDivisor = 100000000000000;
-      $('.stop_moving button').text("Rotate Globe");
+      $('#rotate-button').attr("src", "/assets/play.png");
     } else {
       speedDivisor = 150;
-      $('.stop_moving button').text("Stop Moving");
+      $('#rotate-button').attr("src", "/assets/stop.png");
     }
   });
 
