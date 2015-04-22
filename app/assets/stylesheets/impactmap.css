@@ -52,6 +52,7 @@
     color: #aaaaaa;
     width: 40px;
     position: absolute;
+    display: block;
     padding: 10px;
 }
 

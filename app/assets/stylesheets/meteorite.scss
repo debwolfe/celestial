@@ -37,6 +37,8 @@ body {
   line-height: 1.4;
 }
 
+
+
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
  * These selection rule sets have to be separate.
@@ -120,7 +122,7 @@ body {
   padding-top: 106px;
 }
 
-h2 {
+h2, h4 {
   margin: 0 auto;
   color: white;
   padding: 10px;
@@ -229,6 +231,10 @@ main {
 /* Slide-chart */
 #slide-chart .bcg {
   background-image: url('bcg_slide-3.jpg')
+}
+
+#slide-chart .bcg-chart {
+  background: #333739;
 }
 
 #slide-chart .hsContent {

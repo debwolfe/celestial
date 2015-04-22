@@ -4,7 +4,7 @@
     height: 700px;
     margin: 0 auto;
     padding: 0;
-    border: 2px #FFFFFF;
+    border: 2px #FFFFFF solid;
     float: left;
 }
 
@@ -46,6 +46,7 @@
     float: right;
     display:inline;
     width: 40px;
+    margin-right: 1em;
 }
 
 /* Above formatting in line form */
