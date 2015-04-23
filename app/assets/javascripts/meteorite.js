@@ -32,8 +32,8 @@
     winH = $(window).height();
 
     // Keep minimum height 550
-    if (winH <= 550) {
-      // winH = 550;
+    if (winH <= 900) {
+      winH = 900;
     }
 
     // Resize our slides
