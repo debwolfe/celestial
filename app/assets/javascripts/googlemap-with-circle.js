@@ -139,6 +139,7 @@ function relocateTools() {
   $("#play_button").css("left", $("#slider").offset().left - 55);
   $("#play_button").css("top", $("#slider").position().top - 10);
 
+  // $("#map-canvas").css("height", $("#slide-googlemap").height() * 0.6);
 }
 
 $(window).resize(function () {
@@ -171,7 +172,10 @@ $(function () {
     }
   });
 
-  $('#year_indicator').on("keydown", function () {
+  var play_interval
+  var fadeout_interval
+
+  $('#year_indicator').on("focus", function () {
     stopPlaying();
   });
   $('#year_indicator').on("change", function () {
