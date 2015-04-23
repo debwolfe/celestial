@@ -11,8 +11,5 @@
 /log/*
 !/log/.keep
 /tmp
-# ignore all
 coverage
 .idea/
-.DS_Store
-public/assets/**
