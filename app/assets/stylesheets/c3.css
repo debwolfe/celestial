@@ -1,4 +1,9 @@
 /*-- Chart --*/
+.chart_title {
+  margin: 30px 0 0 0;
+  padding: 20px 0 0 0;
+}
+
 .c3 svg {
   font: 16px Helvetica; }
 
