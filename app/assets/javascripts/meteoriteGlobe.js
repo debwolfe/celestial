@@ -1,6 +1,6 @@
 function initializeWebGL() {
   // Set up Map
-  var options = {zoom: 2.5, position: [28, -80], scrollWheelZoom: true, atmosphere: true};
+  var options = {zoom: 2.5, minZoom: 0.5, position: [28, -80], scrollWheelZoom: true, atmosphere: true};
   var earth = new WE.map('earth_div', options);
   WE.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '© OpenStreetMap contributors'
