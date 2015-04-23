@@ -28,8 +28,6 @@ function initializeWebGL() {
       type: 'GET'
     })
     .done(function(response) {
-      console.log("Success! The Ajax call worked.");
-      console.log(response[0]);
       makeMeteoriteMarkers(response, response.length);
     })
     .fail(function() {
